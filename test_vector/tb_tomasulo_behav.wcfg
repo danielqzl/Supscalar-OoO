@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_tomasulo_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="riscv_pkg" />
+            <top_module name="tb_tomasulo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="176.800 ns"></ZoomStartTime>
+      <ZoomEndTime time="697.344 ns"></ZoomEndTime>
+      <Cursor1Time time="660.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="244"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/tb_tomasulo/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group446" type="group">
+      <obj_property name="label">Status</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/completed" type="logic">
+         <obj_property name="ElementShortName">completed</obj_property>
+         <obj_property name="ObjectShortName">completed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/exception" type="logic">
+         <obj_property name="ElementShortName">exception</obj_property>
+         <obj_property name="ObjectShortName">exception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/program_pc" type="array">
+         <obj_property name="ElementShortName">program_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">program_pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/pc[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="label">PC_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/cmt_pc" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">cmt_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cmt_pc[31:0]</obj_property>
+         <obj_property name="label">cmt_pc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/exc_stall" type="logic">
+         <obj_property name="ElementShortName">exc_stall</obj_property>
+         <obj_property name="ObjectShortName">exc_stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/stall" type="logic">
+         <obj_property name="ElementShortName">stall</obj_property>
+         <obj_property name="ObjectShortName">stall</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/exc_flush" type="logic">
+         <obj_property name="ElementShortName">exc_flush</obj_property>
+         <obj_property name="ObjectShortName">exc_flush</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/resume" type="logic">
+         <obj_property name="ElementShortName">resume</obj_property>
+         <obj_property name="ObjectShortName">resume</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/resume_pc" type="array">
+         <obj_property name="ElementShortName">resume_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">resume_pc[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group255" type="group">
+      <obj_property name="label">Load Instr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/instr_mem" type="array">
+         <obj_property name="ElementShortName">instr_mem[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_mem[0:31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/instr_wr_en" type="logic">
+         <obj_property name="ElementShortName">instr_wr_en</obj_property>
+         <obj_property name="ObjectShortName">instr_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/wr_instr" type="array">
+         <obj_property name="ElementShortName">wr_instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_instr[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group220" type="group">
+      <obj_property name="label">Instr Queue</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/fetch_instr" type="array">
+         <obj_property name="ElementShortName">fetch_instr[0:1]</obj_property>
+         <obj_property name="ObjectShortName">fetch_instr[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/instr[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="label">instr[0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/instr[1]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="label">instr[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_dec[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="label">uop_dec[0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_dec[1]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="label">uop_dec[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/pc[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="label">PC[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group477" type="group">
+         <obj_property name="label">uop_queue</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_queue/wr_data" type="array">
+            <obj_property name="ElementShortName">wr_data[0:1][55:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_data[0:1][55:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_queue/wr_en" type="array">
+            <obj_property name="ElementShortName">wr_en[0:1]</obj_property>
+            <obj_property name="ObjectShortName">wr_en[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_queue/wr_ok" type="array">
+            <obj_property name="ElementShortName">wr_ok[0:1]</obj_property>
+            <obj_property name="ObjectShortName">wr_ok[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_queue/rd_en" type="array">
+            <obj_property name="ElementShortName">rd_en[0:1]</obj_property>
+            <obj_property name="ObjectShortName">rd_en[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_queue/rd_ok" type="array">
+            <obj_property name="ElementShortName">rd_ok[0:1]</obj_property>
+            <obj_property name="ObjectShortName">rd_ok[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_instr_queue/uop_out" type="array">
+            <obj_property name="ElementShortName">uop_out[0:1]</obj_property>
+            <obj_property name="ObjectShortName">uop_out[0:1]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/dispatch_valid" type="array">
+      <obj_property name="ElementShortName">dispatch_valid[0:1]</obj_property>
+      <obj_property name="ObjectShortName">dispatch_valid[0:1]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider5767">
+      <obj_property name="label">Rename Stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group80" type="group">
+      <obj_property name="label">Reg File</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/stall" type="logic">
+         <obj_property name="ElementShortName">stall</obj_property>
+         <obj_property name="ObjectShortName">stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/valid" type="array">
+         <obj_property name="ElementShortName">valid[0:1]</obj_property>
+         <obj_property name="ObjectShortName">valid[0:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/uop_in" type="array">
+         <obj_property name="ElementShortName">uop_in[0:1]</obj_property>
+         <obj_property name="ObjectShortName">uop_in[0:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/rename_stalled" type="array">
+         <obj_property name="ElementShortName">rename_stalled[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rename_stalled[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/rf_alloc_en" type="array">
+         <obj_property name="ElementShortName">rf_alloc_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rf_alloc_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/allocReg" type="array">
+         <obj_property name="ElementShortName">allocReg[0:1][5:0]</obj_property>
+         <obj_property name="ObjectShortName">allocReg[0:1][5:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/rf_free_en" type="array">
+         <obj_property name="ElementShortName">rf_free_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rf_free_en[0:1]</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/allocTag" type="array">
+         <obj_property name="ElementShortName">allocTag[0:1][5:0]</obj_property>
+         <obj_property name="ObjectShortName">allocTag[0:1][5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/sb_free_en" type="array">
+         <obj_property name="ElementShortName">sb_free_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">sb_free_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#808080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group1793" type="group">
+         <obj_property name="label">Mapping</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/pReg_s1[0]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[0][5:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][5:0]</obj_property>
+            <obj_property name="label">pReg_s1[0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/pReg_s2[0]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[0][5:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][5:0]</obj_property>
+            <obj_property name="label">pReg_s2[0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/pReg_s1[1]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[1][5:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][5:0]</obj_property>
+            <obj_property name="label">pReg_s1[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/pReg_s2[1]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[1][5:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][5:0]</obj_property>
+            <obj_property name="label">pReg_s2[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/rdata_s1" type="array">
+            <obj_property name="ElementShortName">rdata_s1[0:1][31:0]</obj_property>
+            <obj_property name="ObjectShortName">rdata_s1[0:1][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/rdata_s2" type="array">
+            <obj_property name="ElementShortName">rdata_s2[0:1][31:0]</obj_property>
+            <obj_property name="ObjectShortName">rdata_s2[0:1][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group142" type="group">
+         <obj_property name="label">free_list_rf</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/rop_alloc" type="logic">
+            <obj_property name="ElementShortName">rop_alloc</obj_property>
+            <obj_property name="ObjectShortName">rop_alloc</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/alloc_en" type="array">
+            <obj_property name="ElementShortName">alloc_en[0:1]</obj_property>
+            <obj_property name="ObjectShortName">alloc_en[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/alloc_ptr" type="array">
+            <obj_property name="ElementShortName">alloc_ptr[0:1][5:0]</obj_property>
+            <obj_property name="ObjectShortName">alloc_ptr[0:1][5:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/rop_free" type="logic">
+            <obj_property name="ElementShortName">rop_free</obj_property>
+            <obj_property name="ObjectShortName">rop_free</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/free_en_i" type="array">
+            <obj_property name="ElementShortName">free_en_i[0:1]</obj_property>
+            <obj_property name="ObjectShortName">free_en_i[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/free_en" type="array">
+            <obj_property name="ElementShortName">free_en[0:1]</obj_property>
+            <obj_property name="ObjectShortName">free_en[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/free_ptr" type="array">
+            <obj_property name="ElementShortName">free_ptr[0:1][5:0]</obj_property>
+            <obj_property name="ObjectShortName">free_ptr[0:1][5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/full" type="array">
+            <obj_property name="ElementShortName">full[0:1]</obj_property>
+            <obj_property name="ObjectShortName">full[0:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/i_freeList_rf/empty" type="array">
+            <obj_property name="ElementShortName">empty[0:1]</obj_property>
+            <obj_property name="ObjectShortName">empty[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group144" type="group">
+         <obj_property name="label">free_list_sb</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/rf_cmt_en" type="array">
+         <obj_property name="ElementShortName">rf_cmt_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rf_cmt_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group536" type="group">
+         <obj_property name="label">arat</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_arat/wr_en" type="array">
+            <obj_property name="ElementShortName">wr_en[0:1]</obj_property>
+            <obj_property name="ObjectShortName">wr_en[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_arat/wr_aReg_0" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">wr_aReg_0[4:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_aReg_0[4:0]</obj_property>
+            <obj_property name="label">wr_aReg_0</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_arat/wr_pReg_0" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">wr_pReg_0[5:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_pReg_0[5:0]</obj_property>
+            <obj_property name="label">wr_pReg_0</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_arat/wr_aReg_1" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">wr_aReg_1[4:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_aReg_1[4:0]</obj_property>
+            <obj_property name="label">wr_aReg_1</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_arat/wr_pReg_1" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">wr_pReg_1[5:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_pReg_1[5:0]</obj_property>
+            <obj_property name="label">wr_pReg_1</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/cmt_rat" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">cmt_rat[0:31][5:0]</obj_property>
+         <obj_property name="ObjectShortName">cmt_rat[0:31][5:0]</obj_property>
+         <obj_property name="label">cmt_rat[31]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_srat/aliasTable" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">aliasTable[0:31][5:0]</obj_property>
+         <obj_property name="ObjectShortName">aliasTable[0:31][5:0]</obj_property>
+         <obj_property name="label">spec_rat[31]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_regFile/u_prf/rf" type="array">
+         <obj_property name="ElementShortName">rf[0:63][31:0]</obj_property>
+         <obj_property name="ObjectShortName">rf[0:63][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/ren_valid" type="array">
+      <obj_property name="ElementShortName">ren_valid[0:1]</obj_property>
+      <obj_property name="ObjectShortName">ren_valid[0:1]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/rename_res[0].rd_tag" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.rd_tag[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.rd_tag[6:0]</obj_property>
+      <obj_property name="label">ren_tag[0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/rename_res[1].rd_tag" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.rd_tag[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.rd_tag[6:0]</obj_property>
+      <obj_property name="label">ren_tag[1]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/rename_res[0]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">rename_ch[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/rename_res[1]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+      <obj_property name="label">rename_ch[1]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider5766">
+      <obj_property name="label">Execution Stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/rs_accept" type="array">
+      <obj_property name="ElementShortName">rs_accept[0:3][0:1]</obj_property>
+      <obj_property name="ObjectShortName">rs_accept[0:3][0:1]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group466" type="group">
+      <obj_property name="label">RS_logic</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/busy" type="array">
+         <obj_property name="ElementShortName">busy[0:3]</obj_property>
+         <obj_property name="ObjectShortName">busy[0:3]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/accept" type="array">
+         <obj_property name="ElementShortName">accept[0:3]</obj_property>
+         <obj_property name="ObjectShortName">accept[0:3]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/rs_free" type="array">
+         <obj_property name="ElementShortName">rs_free[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rs_free[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/issue_en" type="array">
+         <obj_property name="ElementShortName">issue_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">issue_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/rdTag" type="array">
+         <obj_property name="ElementShortName">rdTag[0:3][6:0]</obj_property>
+         <obj_property name="ObjectShortName">rdTag[0:3][6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/Qj" type="array">
+         <obj_property name="ElementShortName">Qj[0:3][6:0]</obj_property>
+         <obj_property name="ObjectShortName">Qj[0:3][6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rs_logic/Qk" type="array">
+         <obj_property name="ElementShortName">Qk[0:3][6:0]</obj_property>
+         <obj_property name="ObjectShortName">Qk[0:3][6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group920" type="group">
+      <obj_property name="label">ALU_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[0].u_alu_logic /alu_in" type="array">
+         <obj_property name="ElementShortName">alu_in</obj_property>
+         <obj_property name="ObjectShortName">alu_in</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[0].u_alu_logic /free" type="logic">
+         <obj_property name="ElementShortName">free</obj_property>
+         <obj_property name="ObjectShortName">free</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/grant[0]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="label">grant[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group5268" type="group">
+      <obj_property name="label">ALU_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[1].u_alu_logic /alu_in" type="array">
+         <obj_property name="ElementShortName">alu_in</obj_property>
+         <obj_property name="ObjectShortName">alu_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[1].u_alu_logic /valid_i" type="logic">
+         <obj_property name="ElementShortName">valid_i</obj_property>
+         <obj_property name="ObjectShortName">valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[1].u_alu_logic /valid_out" type="logic">
+         <obj_property name="ElementShortName">valid_out</obj_property>
+         <obj_property name="ObjectShortName">valid_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/\g_alu[1].u_alu_logic /tag_out" type="array">
+         <obj_property name="ElementShortName">tag_out[6:0]</obj_property>
+         <obj_property name="ObjectShortName">tag_out[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group487" type="group">
+      <obj_property name="label">ALU_Mul</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/valid_i" type="logic">
+         <obj_property name="ElementShortName">valid_i</obj_property>
+         <obj_property name="ObjectShortName">valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/alu_in" type="array">
+         <obj_property name="ElementShortName">alu_in</obj_property>
+         <obj_property name="ObjectShortName">alu_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/b" type="array">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/a" type="array">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/product" type="array">
+         <obj_property name="ElementShortName">product[63:0]</obj_property>
+         <obj_property name="ObjectShortName">product[63:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/u_multiplier/state" type="array">
+         <obj_property name="ElementShortName">state[2:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/free" type="logic">
+         <obj_property name="ElementShortName">free</obj_property>
+         <obj_property name="ObjectShortName">free</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_alu_mul/result_reg" type="array">
+         <obj_property name="ElementShortName">result_reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_reg[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group934" type="group">
+      <obj_property name="label">CDB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/req" type="array">
+         <obj_property name="ElementShortName">req[0:3]</obj_property>
+         <obj_property name="ObjectShortName">req[0:3]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/grant" type="array">
+         <obj_property name="ElementShortName">grant[0:3]</obj_property>
+         <obj_property name="ObjectShortName">grant[0:3]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/valid[0]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="label">valid[0]</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/tag[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][6:0]</obj_property>
+         <obj_property name="label">tag[0]</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/data[0]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="label">data[0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/exception[0]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="label">excpetion[0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/valid[1]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="label">valid[1]</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/tag[1]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][6:0]</obj_property>
+         <obj_property name="label">tag[1]</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/data[1]" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="label">data[1]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/i_cdb/exception[1]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="label">exception[1]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group387" type="group">
+      <obj_property name="label">Mem Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group384" type="group">
+         <obj_property name="label">RS_Load</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/accept" type="array">
+            <obj_property name="ElementShortName">accept[0:3]</obj_property>
+            <obj_property name="ObjectShortName">accept[0:3]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/busy" type="array">
+            <obj_property name="ElementShortName">busy[0:3]</obj_property>
+            <obj_property name="ObjectShortName">busy[0:3]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/Qj" type="array">
+            <obj_property name="ElementShortName">Qj[0:3][6:0]</obj_property>
+            <obj_property name="ObjectShortName">Qj[0:3][6:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/Qk" type="array">
+            <obj_property name="ElementShortName">Qk[0:3][6:0]</obj_property>
+            <obj_property name="ObjectShortName">Qk[0:3][6:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/Vj" type="array">
+            <obj_property name="ElementShortName">Vj[0:3][31:0]</obj_property>
+            <obj_property name="ObjectShortName">Vj[0:3][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/Vk" type="array">
+            <obj_property name="ElementShortName">Vk[0:3][31:0]</obj_property>
+            <obj_property name="ObjectShortName">Vk[0:3][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/rdTag" type="array">
+            <obj_property name="ElementShortName">rdTag[0:3][6:0]</obj_property>
+            <obj_property name="ObjectShortName">rdTag[0:3][6:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/rs_free" type="array">
+            <obj_property name="ElementShortName">rs_free[0:1]</obj_property>
+            <obj_property name="ObjectShortName">rs_free[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/\g_snooper[0].entry_snooper_j /tag" type="array">
+            <obj_property name="ElementShortName">tag[6:0]</obj_property>
+            <obj_property name="ObjectShortName">tag[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/entry_ready" type="array">
+            <obj_property name="ElementShortName">entry_ready[0:3]</obj_property>
+            <obj_property name="ObjectShortName">entry_ready[0:3]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_load/issue_en" type="array">
+            <obj_property name="ElementShortName">issue_en[0:0]</obj_property>
+            <obj_property name="ObjectShortName">issue_en[0:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group400" type="group">
+         <obj_property name="label">AGU-LD</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_ld_fu/alu_in" type="array">
+            <obj_property name="ElementShortName">alu_in</obj_property>
+            <obj_property name="ObjectShortName">alu_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_ld_fu/valid" type="logic">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_ld_fu/rd_tag" type="array">
+            <obj_property name="ElementShortName">rd_tag[6:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_tag[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_ld_fu/addr" type="array">
+            <obj_property name="ElementShortName">addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_ld_fu/free" type="logic">
+            <obj_property name="ElementShortName">free</obj_property>
+            <obj_property name="ObjectShortName">free</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group357" type="group">
+         <obj_property name="label">RS-Store</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/rs_accept" type="array">
+            <obj_property name="ElementShortName">rs_accept[0:1]</obj_property>
+            <obj_property name="ObjectShortName">rs_accept[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/accept" type="array">
+            <obj_property name="ElementShortName">accept[0:3]</obj_property>
+            <obj_property name="ObjectShortName">accept[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/rs_stalled_full" type="logic">
+            <obj_property name="ElementShortName">rs_stalled_full</obj_property>
+            <obj_property name="ObjectShortName">rs_stalled_full</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/busy" type="array">
+            <obj_property name="ElementShortName">busy[0:3]</obj_property>
+            <obj_property name="ObjectShortName">busy[0:3]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/sel_for_exec" type="array">
+            <obj_property name="ElementShortName">sel_for_exec[0:3]</obj_property>
+            <obj_property name="ObjectShortName">sel_for_exec[0:3]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="group531" type="group">
+            <obj_property name="label">Entry</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/rdTag" type="array">
+               <obj_property name="ElementShortName">rdTag[0:3][6:0]</obj_property>
+               <obj_property name="ObjectShortName">rdTag[0:3][6:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/Qj" type="array">
+               <obj_property name="ElementShortName">Qj[0:3][6:0]</obj_property>
+               <obj_property name="ObjectShortName">Qj[0:3][6:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/Qk" type="array">
+               <obj_property name="ElementShortName">Qk[0:3][6:0]</obj_property>
+               <obj_property name="ObjectShortName">Qk[0:3][6:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/Vj" type="array">
+               <obj_property name="ElementShortName">Vj[0:3][31:0]</obj_property>
+               <obj_property name="ObjectShortName">Vj[0:3][31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/Vk" type="array">
+               <obj_property name="ElementShortName">Vk[0:3][31:0]</obj_property>
+               <obj_property name="ObjectShortName">Vk[0:3][31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_rs_store/\genblk3.Imm " type="array">
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="ElementShortName">\genblk3.Imm [0:3][31:0]</obj_property>
+               <obj_property name="ObjectShortName">\genblk3.Imm [0:3][31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="label">Imm [0:3][31:0]</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group388" type="group">
+         <obj_property name="label">LDQ</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/accept" type="array">
+            <obj_property name="ElementShortName">accept[0:1]</obj_property>
+            <obj_property name="ObjectShortName">accept[0:1]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/rd_tag_in" type="array">
+            <obj_property name="ElementShortName">rd_tag_in[0:1][6:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_tag_in[0:1][6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/addr_valid" type="logic">
+            <obj_property name="ElementShortName">addr_valid</obj_property>
+            <obj_property name="ObjectShortName">addr_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/addr_in" type="array">
+            <obj_property name="ElementShortName">addr_in[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr_in[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/addr_tag" type="array">
+            <obj_property name="ElementShortName">addr_tag[6:0]</obj_property>
+            <obj_property name="ObjectShortName">addr_tag[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/valid" type="array">
+            <obj_property name="ElementShortName">valid[0:3]</obj_property>
+            <obj_property name="ObjectShortName">valid[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/ready" type="array">
+            <obj_property name="ElementShortName">ready[0:3]</obj_property>
+            <obj_property name="ObjectShortName">ready[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="group978" type="group">
+            <obj_property name="label">Entry</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/valid" type="array">
+               <obj_property name="ElementShortName">valid[0:3]</obj_property>
+               <obj_property name="ObjectShortName">valid[0:3]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/ready" type="array">
+               <obj_property name="ElementShortName">ready[0:3]</obj_property>
+               <obj_property name="ObjectShortName">ready[0:3]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/rd_tag" type="array">
+               <obj_property name="ElementShortName">rd_tag[0:3][6:0]</obj_property>
+               <obj_property name="ObjectShortName">rd_tag[0:3][6:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/addr" type="array">
+               <obj_property name="ElementShortName">addr[0:3][31:0]</obj_property>
+               <obj_property name="ObjectShortName">addr[0:3][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/sq_idx" type="array">
+               <obj_property name="ElementShortName">sq_idx[0:3][1:0]</obj_property>
+               <obj_property name="ObjectShortName">sq_idx[0:3][1:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/no_older_st" type="array">
+               <obj_property name="ElementShortName">no_older_st[0:3]</obj_property>
+               <obj_property name="ObjectShortName">no_older_st[0:3]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/res_data" type="array">
+               <obj_property name="ElementShortName">res_data[31:0]</obj_property>
+               <obj_property name="ObjectShortName">res_data[31:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/head" type="array">
+            <obj_property name="ElementShortName">head[0:1][2:0]</obj_property>
+            <obj_property name="ObjectShortName">head[0:1][2:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/tail" type="array">
+            <obj_property name="ElementShortName">tail[2:0]</obj_property>
+            <obj_property name="ObjectShortName">tail[2:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/exe_ptr" type="array">
+            <obj_property name="ElementShortName">exe_ptr[1:0]</obj_property>
+            <obj_property name="ObjectShortName">exe_ptr[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/full" type="array">
+            <obj_property name="ElementShortName">full[0:1]</obj_property>
+            <obj_property name="ObjectShortName">full[0:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/state" type="array">
+            <obj_property name="ElementShortName">state[2:0]</obj_property>
+            <obj_property name="ObjectShortName">state[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_load_queue/next_state" type="array">
+            <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+            <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group401" type="group">
+         <obj_property name="label">AGU-ST</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/alu_in" type="array">
+            <obj_property name="ElementShortName">alu_in</obj_property>
+            <obj_property name="ObjectShortName">alu_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/imm" type="array">
+            <obj_property name="ElementShortName">imm[31:0]</obj_property>
+            <obj_property name="ObjectShortName">imm[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/valid" type="logic">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/free" type="logic">
+            <obj_property name="ElementShortName">free</obj_property>
+            <obj_property name="ObjectShortName">free</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/addr" type="array">
+            <obj_property name="ElementShortName">addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_st_fu/data" type="array">
+            <obj_property name="ElementShortName">data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">data[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group389" type="group">
+         <obj_property name="label">STQ</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/head" type="array">
+            <obj_property name="ElementShortName">head[0:1][2:0]</obj_property>
+            <obj_property name="ObjectShortName">head[0:1][2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/tail" type="array">
+            <obj_property name="ElementShortName">tail[2:0]</obj_property>
+            <obj_property name="ObjectShortName">tail[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/valid" type="array">
+            <obj_property name="ElementShortName">valid[0:3]</obj_property>
+            <obj_property name="ObjectShortName">valid[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/ready" type="array">
+            <obj_property name="ElementShortName">ready[0:3]</obj_property>
+            <obj_property name="ObjectShortName">ready[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/committed" type="array">
+            <obj_property name="ElementShortName">committed[0:3]</obj_property>
+            <obj_property name="ObjectShortName">committed[0:3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_store_queue/exe_ptr" type="array">
+            <obj_property name="ElementShortName">exe_ptr[1:0]</obj_property>
+            <obj_property name="ObjectShortName">exe_ptr[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group4061" type="group">
+         <obj_property name="label">Search</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_sq_searcher/en" type="logic">
+            <obj_property name="ElementShortName">en</obj_property>
+            <obj_property name="ObjectShortName">en</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_sq_searcher/state" type="array">
+            <obj_property name="ElementShortName">state[1:0]</obj_property>
+            <obj_property name="ObjectShortName">state[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_sq_searcher/next_state" type="array">
+            <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+            <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/search_done" type="logic">
+            <obj_property name="ElementShortName">search_done</obj_property>
+            <obj_property name="ObjectShortName">search_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/search_match" type="logic">
+            <obj_property name="ElementShortName">search_match</obj_property>
+            <obj_property name="ObjectShortName">search_match</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_mem_unit/u_sq_searcher/last_match_idx" type="array">
+            <obj_property name="ElementShortName">last_match_idx[1:0]</obj_property>
+            <obj_property name="ObjectShortName">last_match_idx[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group393" type="group">
+         <obj_property name="label">Mem_if</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/i_mem/ld_ok" type="logic">
+            <obj_property name="ElementShortName">ld_ok</obj_property>
+            <obj_property name="ObjectShortName">ld_ok</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/ld_req" type="logic">
+            <obj_property name="ElementShortName">ld_req</obj_property>
+            <obj_property name="ObjectShortName">ld_req</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/ld_addr" type="array">
+            <obj_property name="ElementShortName">ld_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ld_addr[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/st_req" type="logic">
+            <obj_property name="ElementShortName">st_req</obj_property>
+            <obj_property name="ObjectShortName">st_req</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/st_cpl" type="logic">
+            <obj_property name="ElementShortName">st_cpl</obj_property>
+            <obj_property name="ObjectShortName">st_cpl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/st_addr" type="array">
+            <obj_property name="ElementShortName">st_addr[31:0]</obj_property>
+            <obj_property name="ObjectShortName">st_addr[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/st_data" type="array">
+            <obj_property name="ElementShortName">st_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">st_data[31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/mem_ready" type="logic">
+            <obj_property name="ElementShortName">mem_ready</obj_property>
+            <obj_property name="ObjectShortName">mem_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/i_mem/mem_data" type="array">
+            <obj_property name="ElementShortName">mem_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">mem_data[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider5763">
+      <obj_property name="label">Commit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group169" type="group">
+      <obj_property name="label">ROB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rob/enq_en" type="array">
+         <obj_property name="ElementShortName">enq_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">enq_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group706" type="group">
+         <obj_property name="label">Bank 0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /w_ptr" type="array">
+            <obj_property name="ElementShortName">w_ptr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">w_ptr[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /commit_en" type="logic">
+            <obj_property name="ElementShortName">commit_en</obj_property>
+            <obj_property name="ObjectShortName">commit_en</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /r_ptr" type="array">
+            <obj_property name="ElementShortName">r_ptr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">r_ptr[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /valid" type="array">
+            <obj_property name="ElementShortName">valid[0:7]</obj_property>
+            <obj_property name="ObjectShortName">valid[0:7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /completed" type="array">
+            <obj_property name="ElementShortName">completed[0:7]</obj_property>
+            <obj_property name="ObjectShortName">completed[0:7]</obj_property>
+            <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /Rd" type="array">
+            <obj_property name="ElementShortName">Rd[0:7][4:0]</obj_property>
+            <obj_property name="ObjectShortName">Rd[0:7][4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /PRd" type="array">
+            <obj_property name="ElementShortName">PRd[0:7][6:0]</obj_property>
+            <obj_property name="ObjectShortName">PRd[0:7][6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /data" type="array">
+            <obj_property name="ElementShortName">data[0:7][31:0]</obj_property>
+            <obj_property name="ObjectShortName">data[0:7][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[0].u_bank /exception" type="array">
+            <obj_property name="ElementShortName">exception[0:7]</obj_property>
+            <obj_property name="ObjectShortName">exception[0:7]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group1156" type="group">
+         <obj_property name="label">Bank 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /w_ptr" type="array">
+            <obj_property name="ElementShortName">w_ptr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">w_ptr[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /commit_en" type="logic">
+            <obj_property name="ElementShortName">commit_en</obj_property>
+            <obj_property name="ObjectShortName">commit_en</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /r_ptr" type="array">
+            <obj_property name="ElementShortName">r_ptr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">r_ptr[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /valid" type="array">
+            <obj_property name="ElementShortName">valid[0:7]</obj_property>
+            <obj_property name="ObjectShortName">valid[0:7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /completed" type="array">
+            <obj_property name="ElementShortName">completed[0:7]</obj_property>
+            <obj_property name="ObjectShortName">completed[0:7]</obj_property>
+            <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /Rd" type="array">
+            <obj_property name="ElementShortName">Rd[0:7][4:0]</obj_property>
+            <obj_property name="ObjectShortName">Rd[0:7][4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/dut/u_rob/\g_bank[1].u_bank /data" type="array">
+            <obj_property name="ElementShortName">data[0:7][31:0]</obj_property>
+            <obj_property name="ObjectShortName">data[0:7][31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rob/exception" type="array">
+         <obj_property name="ElementShortName">exception[0:1]</obj_property>
+         <obj_property name="ObjectShortName">exception[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rob/completed" type="array">
+         <obj_property name="ElementShortName">completed[0:1]</obj_property>
+         <obj_property name="ObjectShortName">completed[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_rob/commit_en" type="array">
+         <obj_property name="ElementShortName">commit_en[0:1]</obj_property>
+         <obj_property name="ObjectShortName">commit_en[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus4739" type="vbus">
+      <obj_property name="label">commit_valid</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/cmt_res[0].commit_valid" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">.commit_valid</obj_property>
+         <obj_property name="ObjectShortName">.commit_valid</obj_property>
+         <obj_property name="label">cmt[0].cmt_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/cmt_res[1].commit_valid" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">.commit_valid</obj_property>
+         <obj_property name="ObjectShortName">.commit_valid</obj_property>
+         <obj_property name="label">cmt[1].cmt_valid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/cmt_res[0].PRd" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.PRd[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.PRd[6:0]</obj_property>
+      <obj_property name="label">cmt_tag[0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/cmt_res[1].PRd" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">.PRd[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.PRd[6:0]</obj_property>
+      <obj_property name="label">cmt_tag[1]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/cmt_res[0]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+      <obj_property name="label">cmt_ch[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_tomasulo/dut/cmt_res[1]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+      <obj_property name="label">cmt_ch[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group263" type="group">
+      <obj_property name="label">Hazard</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/rename_stalled" type="array">
+         <obj_property name="ElementShortName">rename_stalled[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rename_stalled[0:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/rob_credit" type="array">
+         <obj_property name="ElementShortName">rob_credit[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rob_credit[0:1]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/ren_valid" type="array">
+         <obj_property name="ElementShortName">ren_valid[0:1]</obj_property>
+         <obj_property name="ObjectShortName">ren_valid[0:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/exc_stall" type="logic">
+         <obj_property name="ElementShortName">exc_stall</obj_property>
+         <obj_property name="ObjectShortName">exc_stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/u_hazard_unit/scheduler_stalled" type="logic">
+         <obj_property name="ElementShortName">scheduler_stalled</obj_property>
+         <obj_property name="ObjectShortName">scheduler_stalled</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/dut/stall" type="logic">
+         <obj_property name="ElementShortName">stall</obj_property>
+         <obj_property name="ObjectShortName">stall</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2841" type="group">
+      <obj_property name="label">Simulation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_tomasulo/hist_len" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">hist_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hist_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="label">hist_len</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/cmt_pc_hist" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">cmt_pc_hist[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">cmt_pc_hist[0:31][31:0]</obj_property>
+         <obj_property name="label">cmt_pc_hist[0:31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_tomasulo/arf_frame" type="array">
+         <obj_property name="ElementShortName">arf_frame[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">arf_frame[0:31][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[0]" type="array">
+            <obj_property name="ElementShortName">[0][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[1]" type="array">
+            <obj_property name="ElementShortName">[1][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[2]" type="array">
+            <obj_property name="ElementShortName">[2][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[3]" type="array">
+            <obj_property name="ElementShortName">[3][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[4]" type="array">
+            <obj_property name="ElementShortName">[4][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[5]" type="array">
+            <obj_property name="ElementShortName">[5][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[6]" type="array">
+            <obj_property name="ElementShortName">[6][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[7]" type="array">
+            <obj_property name="ElementShortName">[7][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[8]" type="array">
+            <obj_property name="ElementShortName">[8][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[9]" type="array">
+            <obj_property name="ElementShortName">[9][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[10]" type="array">
+            <obj_property name="ElementShortName">[10][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[11]" type="array">
+            <obj_property name="ElementShortName">[11][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[12]" type="array">
+            <obj_property name="ElementShortName">[12][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[13]" type="array">
+            <obj_property name="ElementShortName">[13][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[14]" type="array">
+            <obj_property name="ElementShortName">[14][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[15]" type="array">
+            <obj_property name="ElementShortName">[15][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[16]" type="array">
+            <obj_property name="ElementShortName">[16][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[17]" type="array">
+            <obj_property name="ElementShortName">[17][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[18]" type="array">
+            <obj_property name="ElementShortName">[18][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[19]" type="array">
+            <obj_property name="ElementShortName">[19][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[20]" type="array">
+            <obj_property name="ElementShortName">[20][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[21]" type="array">
+            <obj_property name="ElementShortName">[21][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[22]" type="array">
+            <obj_property name="ElementShortName">[22][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[23]" type="array">
+            <obj_property name="ElementShortName">[23][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[24]" type="array">
+            <obj_property name="ElementShortName">[24][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[25]" type="array">
+            <obj_property name="ElementShortName">[25][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[26]" type="array">
+            <obj_property name="ElementShortName">[26][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[27]" type="array">
+            <obj_property name="ElementShortName">[27][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[28]" type="array">
+            <obj_property name="ElementShortName">[28][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[29]" type="array">
+            <obj_property name="ElementShortName">[29][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[30]" type="array">
+            <obj_property name="ElementShortName">[30][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[31]" type="array">
+            <obj_property name="ElementShortName">[31][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[0]" type="array">
+            <obj_property name="ElementShortName">[0][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[1]" type="array">
+            <obj_property name="ElementShortName">[1][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[2]" type="array">
+            <obj_property name="ElementShortName">[2][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[3]" type="array">
+            <obj_property name="ElementShortName">[3][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[4]" type="array">
+            <obj_property name="ElementShortName">[4][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[5]" type="array">
+            <obj_property name="ElementShortName">[5][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[6]" type="array">
+            <obj_property name="ElementShortName">[6][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[7]" type="array">
+            <obj_property name="ElementShortName">[7][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[8]" type="array">
+            <obj_property name="ElementShortName">[8][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[9]" type="array">
+            <obj_property name="ElementShortName">[9][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[10]" type="array">
+            <obj_property name="ElementShortName">[10][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[11]" type="array">
+            <obj_property name="ElementShortName">[11][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[12]" type="array">
+            <obj_property name="ElementShortName">[12][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[13]" type="array">
+            <obj_property name="ElementShortName">[13][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[14]" type="array">
+            <obj_property name="ElementShortName">[14][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[15]" type="array">
+            <obj_property name="ElementShortName">[15][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[16]" type="array">
+            <obj_property name="ElementShortName">[16][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[17]" type="array">
+            <obj_property name="ElementShortName">[17][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[18]" type="array">
+            <obj_property name="ElementShortName">[18][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[19]" type="array">
+            <obj_property name="ElementShortName">[19][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[20]" type="array">
+            <obj_property name="ElementShortName">[20][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[21]" type="array">
+            <obj_property name="ElementShortName">[21][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[22]" type="array">
+            <obj_property name="ElementShortName">[22][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[23]" type="array">
+            <obj_property name="ElementShortName">[23][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[24]" type="array">
+            <obj_property name="ElementShortName">[24][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[25]" type="array">
+            <obj_property name="ElementShortName">[25][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[26]" type="array">
+            <obj_property name="ElementShortName">[26][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[27]" type="array">
+            <obj_property name="ElementShortName">[27][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[28]" type="array">
+            <obj_property name="ElementShortName">[28][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[29]" type="array">
+            <obj_property name="ElementShortName">[29][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[30]" type="array">
+            <obj_property name="ElementShortName">[30][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_tomasulo/arf_frame[31]" type="array">
+            <obj_property name="ElementShortName">[31][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
